@@ -7,6 +7,8 @@
 </head>
 <body>
     <Script>
+    
+      
       //Exercício 17
         let numero = +prompt("Insira o número:")
         console.log (`Antecessor:${numero -1}\nSucessor:${numero +1}`)
@@ -28,18 +30,25 @@
         //Exercício 20
 
         let preco = (prompt("Preço do produto:"))
-        let porcentagem = (prompt("Porcentagem de desconto:"))
-        console.log (`Preço:${preco}\nPorcentagem:${porcentagem}`)
-        console.log (`Preço final:${(preco*porcentagem)/2}`)
-       
+        let percentualdesconto = (prompt("Porcentagem de desconto:"))
+        console.log (`Preço:${preco}\nPorcentagem:${percentualdesconto}`)
+        let precoDesconto = percentualdesconto / 100 * preco
+        let precofinal = preco-precoDesconto
+        console.log (`Valor desconto:${precoDesconto}`)
+        console.log (`Preço Final:${preco-precoDesconto}`)
+
         
+        //Exercício 21
         
-
-
-    
+        let nome = (prompt("Qual o seu nome?"))
+        let valorsalario = +prompt ("Qual o valor do seu salário?")
+        let valorvendas = +prompt ("Qual o seu valor de vendas?")
+        console.log (`Nome:${nome}\nSalário:R$${valorsalario}\nVendas:R$${valorvendas}`)
+        const comissao = 15
+        let precofinal = (valorvendas*comissao)/100  
+        console.log (`Valor Comissão:${precofinal}`)
+        console.log (`Valor total:${valorsalario+precofinal}`)
         
-
-
         
     </Script>
 </body>

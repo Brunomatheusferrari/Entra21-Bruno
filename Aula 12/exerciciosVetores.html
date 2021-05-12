@@ -9,15 +9,96 @@
     <script>
 
         //Exercício 1
-        let numeros = []
+       
+        let vetor = [],
+            pares = 0
         for (let i = 0; i < 10; i++) {
-            numeros[i] = +prompt("Digite um número")
-            if (i %2 ==0 ){
-                console.log (i)
-            }
+            vetor[i] = +prompt("Digite um número")
+            if (vetor[i] %2 ==0 ) pares++
+            
         }
+        console.log(`A quantidade de pares é ${pares}`)
+
+        //Exercício 2
+
+        let vetor = [];
+        let maiorNumero = 0
+       
+        for(let i = 0; i < 10 ; i++){                                 //Incompleto
+            vetor[i] = +prompt("Digite um número")
+
+            if (i === 0) {
+                maiorNumero = vetor[i]
+            } else if (vetor[i] > maiorNumero) {
+                maiorNumero = vetor[i]
+            }           
+        } 
+        console.log = (`O maior número é ${maiorNumero}`)
+        
+
+        //Exercício 3
+
+       let vetor = []
+       let maiorNumero = 0
+       let menorNumero = 1
+
+       for(let i = 0; i < 10; i++ ){
+           vetor[i] = +prompt("Digite um número:")
+       
+            if (vetor[i] > maiorNumero){
+                maiorNumero = vetor[i]
+            }else if(vetor[i] < menorNumero){
+                menorNumero = vetor[i]
+            }
+        
+        }
+      
+       
+       
+ 
+        
+        
+
+            
+        //Exercício 4
+
+            let vetor = []
+            let vetorinverso=[]
+
+            for(let i = 0; i<5; i++){
+                vetor[i] = +prompt("Digite um número:")
+            }                                                                                   
+
+ 
+
+        //Exercício 5
+
+            let vetor = ["Henrique Bender", "Raissa Faria", "Victor Borges", "Christofer Dalpiaz", "Camilli Steuck"]
+            let nome = (prompt("Digite um nome:"))
+
+            if(nome = vetor){
+                console.log = ("Achei")
+            }else if(nome){
+                console.log = ("Não achei")
+            }
 
 
+
+        
+        //Exercício 6
+
+
+            let a = [1, 0, 5, -2, -5, 7]
+            let soma = a[0] + a[1] + a[5]
+            console.log = (soma)
+            a[4] = 100
+            console.log = (`${a[0]}\n${a[1]}\n${a[2]}\n${a[3]}\n${a[4]}\n$[5]}`)
+
+
+        //Exercício 7
+
+        
+        
 
 
     </script>

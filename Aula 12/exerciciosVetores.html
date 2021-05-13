@@ -52,37 +52,43 @@
             }
         
         }
-      
-       
-       
- 
-        
-        
 
+        console.log(`O maior número é ${maiorNumero}`)
+        console.log(`O menor número é ${menorNumero}`)
+      
             
-        //Exercício 4
+     
+       //Exercício 4
 
             let vetor = []
-            let vetorinverso=[]
-
+            let vetorinverso = []
+            let contador = 4
+                                                             
             for(let i = 0; i<5; i++){
                 vetor[i] = +prompt("Digite um número:")
-            }                                                                                   
+                vetorinverso[contador] = vetor[i] 
+                contador--
+            
+            }
+
+            console.log (vetor)
+            console.log (vetorinverso)                                                                                
 
  
 
         //Exercício 5
 
-            let vetor = ["Henrique Bender", "Raissa Faria", "Victor Borges", "Christofer Dalpiaz", "Camilli Steuck"]
-            let nome = (prompt("Digite um nome:"))
+            vetor = []
+           for(let i = 0; i < 5 ; i++){
+               vetor[i] = +prompt("Digite os nomes:")
+           }
+                                                                //incompleto
+           let nome = +prompt("Digite o nome da pessoa que você quer encontrar:")
 
-            if(nome = vetor){
-                console.log = ("Achei")
-            }else if(nome){
-                console.log = ("Não achei")
-            }
+           if(vetor = nome){
+               console.log = ("Achei")
 
-
+           }
 
         
         //Exercício 6
@@ -92,14 +98,108 @@
             let soma = a[0] + a[1] + a[5]
             console.log = (soma)
             a[4] = 100
-            console.log = (`${a[0]}\n${a[1]}\n${a[2]}\n${a[3]}\n${a[4]}\n$[5]}`)
+            console.log = (`${a[0]}\n${a[1]}\n${a[2]}\n${a[3]}\n${a[4]}\n${[5]}`)
 
 
         //Exercício 7
 
+        let vetor = []
+        let quadrado = []
+        for(let i = 0; i < 5 ; i++){
+            vetor[i] = +prompt("Digite um número:")
+           quadrado[i] = vetor[i] **2
+        }
         
+        console.log  (vetor)
+        console.log  (quadrado)
+    
+
+        //Exercício 8
+
+
+        let vetor = []
+        let contador = 0
+        let numero = 0
+        for( let i = 0; i < 6; i++){
+        let numero = +prompt ("Digite um número par")
+
+        if(numero % 2 == 0){
+            vetor[contador] = numero
+            contador++                                              
+         }
+        }
+
+        let j = vetor.length - 1
+        while (j >= 0 ){
+            console.log (vetor[j])
+            j--
+
+        }
+
         
 
+        //Exercício 9
+
+                                                                     //incompleto
+
+
+        //Exercício 10
+
+
+        let vetor = []
+        let soma = 0
+        let numerodenegativos = 0
+        for(let i = 0; i < 10; i++){
+          vetor[i] = +prompt("Digite um número:")                   
+             
+          if (vetor[i] > 0){
+                soma += vetor[i]
+       
+             } else {
+                numerodenegativos++
+             }
+
+        }
+
+        console.log (`A soma dos positivos é: ${soma}`)
+        console.log(`O número de negativos é: ${numerodenegativos}`)
+
+        
+        //Exercício 11
+
+        let vetor = []
+        let maior = 0
+        let menor = 0
+
+        for(let i = 0; i < 5; i++){
+            vetor[i] = +prompt("Digite um número:")
+        
+                if(vetor[i] > maior){
+                    maior == vetor[i]
+                } else if (vetor[i] < menor){
+                    menor == vetor[i]                           //Incompleto
+                }
+        
+            for(let j = 0; j < 5; j++){
+                
+                if(vetor[j] == maior){
+                    console.log (`O maior elemento é ${maior} e sua posição é ${j}`)
+                } else if (vetor[j] == menor){
+                    console.log (`O menor elemento é ${menor} e sua posição é ${j}`)
+                }
+
+                
+                }
+               
+            }
+              
+                
+        //Exercício 12
+
+        let vetor = []
+        vetor[Math.random()]
+
+        
 
     </script>
 </body>

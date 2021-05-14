@@ -195,11 +195,72 @@
               
                 
         //Exercício 12
+                                                                                         
+        let vetor = []
+        let contador = [0, 0, 0, 0, 0, 0]
+        
+        for(let i = 0 ; i < 100; i++){
+            vetor[i] = Math.floor(Math.random() * (7 - 1) + 1)
+            
+        }
+        
+        for(let i = 0; i < 100; i++){
+            switch(vetor[i]){
+                case  1:
+                    contador[0]++
+                    break;
+
+                case  2:
+                    contador[1]++
+                    break;                                                                                                       
+
+                case  3:
+                    contador[2]++
+                    break;
+            
+                case  4:
+                    contador[3]++
+                    break;
+
+                case  5:
+                    contador[4]++
+                    break;
+
+                case  6:
+                    contador[5]++
+                    break;
+
+            }                                    
+        }
+
+        for (let i = 0; i < 6; i++) {
+            console.log(`A quantidade de vezes que o número ${i + 1} apareceu foi: ${contador[i]}`)
+        }
+    
+            
+         
+        //Exercício 13
 
         let vetor = []
-        vetor[Math.random()]
+        let contador = 0
+        let maiorNumero = 0
+        while (numero = true){
+          let  numero = +prompt("Digite um número:")
+          
+            if (numero < 0){
+                    break
+            }else if (numero > maiorNumero){                            //Incompleto
+                menorNumero = numero
 
+                }else(vetor[contador] = numero )   
+            contador++   
+    }      
         
+    
+         
+       
+
+
 
     </script>
 </body>

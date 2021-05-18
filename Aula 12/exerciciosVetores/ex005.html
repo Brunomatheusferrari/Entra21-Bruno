@@ -16,9 +16,17 @@
            
            let nome = +prompt("Digite o nome da pessoa que você quer encontrar:")                                           //Incompleto
 
-           if(vetor = nome){
-               console.log = ("Achei")
+           let achou
+           for(let i = 0; i < 5; i++){
+                if(vetor[i] = nome){
+                    console.log ("Achei")
+                    achou = true
+                    break
+                }
+           }
 
+           if(!achou){
+            console.log("Não achei")
            }
 
 

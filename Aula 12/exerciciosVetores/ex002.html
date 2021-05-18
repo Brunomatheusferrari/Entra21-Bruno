@@ -11,17 +11,18 @@
 
         let vetor = [];
         let maiorNumero = 0
-       
-            for(let i = 0; i < 10 ; i++){                                 //Incompleto
+        let posicao = 0
+            for(let i = 0; i < 10 ; i++){                                 
                 vetor[i] = +prompt("Digite um número")
 
                     if (i === 0) {
                         maiorNumero = vetor[i]
                     } else if (vetor[i] > maiorNumero) {
                              maiorNumero = vetor[i]
-                    }           
+                            posicao = i
+                       }           
             } 
-            console.log = (`O maior número é ${maiorNumero}`)
+            console.log = (`O vetor é ${vetor}, O maior número é ${maiorNumero} e a posição é ${posicao}`)
 
     </script>
 </body>

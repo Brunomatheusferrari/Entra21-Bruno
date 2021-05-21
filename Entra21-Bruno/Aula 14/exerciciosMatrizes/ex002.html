@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let matriz = [
+            [1, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0],
+            [0, 0, 1, 0, 0],
+            [0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 1]
+            ]
+    
+            console.log (matriz)
+
+
+            let matrizIdentidade = []
+
+        for (let i = 0; i < 5; i++) {
+            matrizIdentidade[i] = []
+                for (let j = 0; j < 5; j++) {
+                        i === j ? matrizIdentidade[i][j] = 1 : matrizIdentidade[i][j] = 0
+                        }    
+                }
+
+        let mostrarMatriz = ""
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                mostrarMatriz += matrizIdentidade[i][j] + "\t"
+        }
+        mostrarMatriz += "\n"
+        }
+
+        console.log(mostrarMatriz)
+
+
+    </script>
+</body>
+</html>

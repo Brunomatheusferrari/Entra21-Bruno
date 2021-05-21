@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        
+        7) Faça um procedimento que lê 50 valores inteiros e retorna o maior e o menor deles. 
+        Utilize a função Math.random() para gerar valores aleatórios entre 1-1000.
+        
+        */
+
+        let vetor = []
+        let maiorNumero = 0
+        let menorNumero = 0
+
+       
+       
+        for(let i = 0; i < 50; i++){
+            vetor[i] =Math.floor(Math.random() * (1000 - 1 + 1)) +1;
+        }
+           
+        function verificador(vetor, maiorNumero, menorNumero){                                                //incompleto
+        for(let i = 0; i < 50 ; i++){
+            if(vetor[i] <= menorNumero){
+                menorNumero = vetor[i]
+            }else if(vetor[i] > maiorNumero ){
+                maiorNumero = vetor[i]
+            }
+        }
+        verificador(vetor, maiorNumero, menorNumero)
+        }
+
+        console.log(`O menor número é ${menorNumero}\nO maior número é ${maiorNumero}`)
+
+    </script>
+</body>
+</html>

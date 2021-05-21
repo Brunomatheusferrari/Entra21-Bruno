@@ -10,3 +10,6 @@ git init
 git status
 git branch -M main
 git push -u origin main
+
+git branch -d bug/1 // deletar branch
+git checkout bug/1 // muda para branch

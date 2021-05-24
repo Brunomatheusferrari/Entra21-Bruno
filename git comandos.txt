@@ -1,0 +1,91 @@
+**Aula Git**
+-Pasta do repositório
+-Criar Read.md através do code
+//Iniciar o Git
+-git init
+
+//Configurando o Git
+-git config --global user.name "Vinícius Bilk" //nome de usuário
+-git config --globa .user.email "vinibil4@gmail.com" //email
+
+//Verificar status
+-git status
+
+//Adicionar arquivo
+-git add .
+
+//Comitar
+-git commit -m "Commit Inicial"
+
+//Mudar nome da branch
+-git branch -M main
+
+//Linkar os repositórios
+
+-git remote add origin (link do repositorio)
+
+//Primeiro push
+
+-git push -u origin main
+
+//Mostrar o log
+-git log
+
+//Puxar arquivos 
+-git pull
+
+
+//Mostrar com detalhes
+-git show <hashCommit>
+//Exemplo://5c4129ea2f8dc7e1960214a809d96f517ac91c34
+
+//criar branch
+
+git branch <nome da branch>
+
+//ir par a a branch
+git checkout <nome da branch>
+
+//votar o commit
+git reset <hash do commit> --hard
+
+//pull request
+git push origin <nome da branch>
+
+//criar e entrar na branch
+git checkout -b features/1
+
+//clonar repositorio
+git clone <url>
+
+//abrir com code
+code .
+
+//deletar branch
+git branch -d <nome da branch>
+
+//qual brancher eu tenho
+git branch
+
+//renomear branch(tem que estar nela)
+git branch -m main
+
+//pushar (kk)
+git push
+
+//dar merge
+git merge <nome da branch>
+
+//linkar fork
+git remote add upstream https://github.com/william-cirico/trabalhando-git.git
+
+//oq ta linkado
+git remote -v
+
+//pull do fork
+git pull upstream main
+
+
+//git hub atualizar o fork
+
+

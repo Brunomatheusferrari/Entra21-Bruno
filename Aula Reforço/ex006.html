@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+         1) Faça um programa que peça ao usuario para digitar 5 valores. Ao final, mostre a soma desses
+            valores e média desses valores (arredondado para duas casas decimais).
+        */
+
+        let acumuladora = 0
+        
+       
+        for(let i = 0; i < 5; i++){
+        let valores = +prompt(`Digite o ${i + 1}º valor:`)
+       
+       acumuladora += valores
+
+        }
+
+        let media = acumuladora / 5
+
+        console.log(`A soma dos valores é ${acumuladora}\nA média dos valores é ${media}`)
+
+    </script>
+</body>
+</html>

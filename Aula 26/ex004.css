@@ -1,0 +1,18 @@
+table, th, td {
+    border: ridge;
+    border-collapse: collapse;
+    ;
+}
+
+thead {
+    background-color: rgb(29, 254, 159);
+    font-size: 20px;
+}
+
+.nacionais {
+    background-color: rgb(8, 128, 127);
+}
+
+.top {
+    background-color: rgb(192, 192, 192);
+}

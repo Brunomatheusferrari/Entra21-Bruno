@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .texto1 {
     color: green;
     font-size: 13px;
@@ -11,4 +12,19 @@
 
 span{
     color: blue;
+=======
+.texto1 {
+    color: green;
+    font-size: 13px;
+    
+}
+
+.texto2 {
+    color: red;
+    font-size: 20px;
+}
+
+span{
+    color: blue;
+>>>>>>> 2c39125dd7b9b90376bb442b35815c3e388f98e7
 }

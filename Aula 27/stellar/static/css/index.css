@@ -432,3 +432,19 @@ margin-left: 490px;
 .linkIconesLearnMore:hover{
     background-color: rgb(241, 241, 241);
 }
+
+.divsessao3 {
+    padding-bottom: 30px;
+}
+
+.divsessao3::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 1284px;
+    text-align: left;
+    margin-top: 90px;
+    background-color: #c2c2c2;
+    position: inherit;   
+    margin-left: -80px;
+}

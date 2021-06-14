@@ -13,7 +13,7 @@ li {
 }
  
 img, textarea {
-    max-width: 99%;
+    max-width: 100%;
     display: block;
 }
  
@@ -29,7 +29,9 @@ img, textarea {
  
 #image_man {
     border-radius: 100%;
-    width: 82%;
+    width: 100px;
+    height: 100px;
+    
 }
 
 .titulo1 {
@@ -38,7 +40,25 @@ img, textarea {
     font-size: 21.6px;
     font-weight: 400;
     text-align: center;
+    line-height: 1.75em;
 }
 strong {
     color: #ffffff;
+    
+}
+.divLogo {
+    margin: 0px;
+}
+
+.linkTitulo {
+    text-decoration: none;
+    color: #ffffff80;
+    border-bottom: dotted #ffffff 1px;
+}
+
+.titulo2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    font-size: 21.6px;
+    font-weight: 400;
 }

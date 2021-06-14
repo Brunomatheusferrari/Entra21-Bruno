@@ -1,0 +1,46 @@
+html {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+ 
+li {
+    list-style: none;
+}
+ 
+img, textarea {
+    max-width: 99%;
+    display: block;
+}
+ 
+.header_principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://html5up.net/uploads/demos/strata/assets/css/images/overlay.png) , url(https://html5up.net/uploads/demos/strata/images/bg.jpg) ;
+    background-position: center;
+    background-size: auto, cover;
+    padding: 4.5em 1.5em;
+    box-sizing: border-box;
+}
+ 
+#image_man {
+    border-radius: 100%;
+    width: 82%;
+}
+
+.titulo1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff80;
+    font-size: 21.6px;
+    font-weight: 400;
+    text-align: center;
+}
+strong {
+    color: #ffffff;
+}

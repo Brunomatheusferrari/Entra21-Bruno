@@ -13,7 +13,7 @@ li {
 }
  
 img, textarea {
-    max-width: 99%;
+    max-width: 100%;
     display: block;
 }
  
@@ -29,7 +29,9 @@ img, textarea {
  
 #image_man {
     border-radius: 100%;
-    width: 82%;
+    width: 100px;
+    height: 100px;
+    
 }
 
 .titulo1 {
@@ -38,7 +40,388 @@ img, textarea {
     font-size: 21.6px;
     font-weight: 400;
     text-align: center;
+    line-height: 1.75em;
 }
 strong {
     color: #ffffff;
+    
 }
+.divLogo {
+    margin: 0px;
+}
+
+.linkTitulo {
+    text-decoration: none;
+    color: #ffffff80;
+    border-bottom: dotted #ffffff 1px;
+}
+
+.titulo2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    font-size: 21.6px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.main {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #A2A2A2;
+    font-size: 16px;
+    line-height: 1.75em;
+    margin-bottom: 32px;
+
+}
+
+.learnMoreButton {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    display: flex;
+    justify-content: center;
+    border: solid #efefef 3px ;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+}
+
+.section2 {
+    border-top: solid #efefef 2px;
+    margin-top: 36px;
+}
+
+.titulo3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    font-size: 19.2px;
+    font-weight: 300;
+    padding-top: 36px;
+    margin-top: 0px;
+}
+
+.imgSection2 {
+    border-radius: 0.35em;
+}
+
+.subtituloSection2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+.textoSection2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #A2A2A2;
+    font-size: 12.8px;
+}
+
+article {
+    margin-bottom: 32px;
+}
+
+.fullPortifolioButton {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    display: flex;
+    justify-content: center;
+    border: solid #efefef 3px ;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+}
+
+.section3 {
+    border-top: solid #efefef 2px;
+    margin-top: 36px;
+}
+
+.titulo4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    font-size: 19.2px;
+    font-weight: 300;
+    padding-top: 36px;
+    margin-top: 0px;
+}
+
+input {
+    background-color: #F7F7F7;
+    padding: 0px 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #A2A2A2;
+    border: none;
+    width: 299px;
+    height: 40px;
+    border-radius: 0.35em;
+}
+
+.email {
+    padding-top: 12px;
+}
+
+#message {
+    background-color: #F7F7F7;
+    padding: 0px 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #afaaaa;
+    border: none;
+    width: 299px;
+    height: 140px;
+    border-radius: 0.35em;
+}
+
+.message {
+    padding-top: 12px;
+    margin-bottom: 30px;
+}
+
+.sendMessageButton {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    display: flex;
+    justify-content: center;
+    border: solid #efefef 3px ;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+}
+
+.lista {
+    list-style: none;
+}
+ul {
+    padding-left: 0px;
+}
+i {
+    display: flex;
+    justify-content: left;
+}
+
+
+
+.textoLista {
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.liCenter {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.li1 {
+    display: flex;
+    margin-top: 30px;
+    
+}
+
+#iconHouse {
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    color: #A2A2A2;
+}
+
+#iconPhone {
+    color: #A2A2A2;
+}
+
+#iconEnvelope {
+    color: #A2A2A2;
+}
+
+.linkEmail {
+    text-decoration: none;
+    color: #A2A2A2;
+    border-bottom: #A2A2A2 dotted 1px;
+}   
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://html5up.net/uploads/demos/strata/assets/css/images/overlay.png) , url(https://html5up.net/uploads/demos/strata/images/bg.jpg) ;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 1.5em;    
+    
+}
+
+.finalIcons {
+    display: flex;
+    align-items: center;
+}
+
+#twitterIcon {
+    color: #ffffff80;
+    width: 30px;
+    height: 28px;
+    font-size: 30px;
+}
+
+#gitHubIcon {
+    color: #ffffff80;
+    width: 30px;
+    height: 28px;
+    font-size: 30px;
+}
+
+#basketIcon {
+    color: #ffffff80;
+    width: 30px;
+    height: 28px;
+    font-size: 30px;
+}
+
+#envelopeIcon {
+    color: #ffffff80;
+    width: 30px;
+    height: 28px;
+    font-size: 30px;
+}
+
+.liFinalIcons {
+    width: 30px;
+    height: 28px;
+    padding-right: 20px;
+}
+.finalText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.finalText li {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff80;
+    font-size: 12.8px;
+    padding-bottom: 15px;
+}
+
+.finalLinks {
+    text-decoration: none;
+    color: #ffffff80;
+    border-bottom: #ffffff80 dotted  1px;
+}
+
+@media screen and (min-width: 480px)  {
+
+.header_principal {
+    padding: 40px 1.5em; 
+}
+.learnMoreButton {
+width: 150px;
+height: 18px;
+}
+
+.gridArticles {
+   display: grid;
+   gap: 2%;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 1fr 1fr 1fr 0.5fr;
+}
+
+Article {
+    margin-left: 24px;
+    height: 230px;
+}
+.fullPortifolioButton {
+    width: 150px;
+    height: 18px;
+    }
+
+input {
+    margin-right: 0px;
+    width: 214px;
+    height: 44px;
+}
+.name {
+    width: 180px;
+}
+.email {
+    width: 180px;;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+   
+}
+
+#message {
+    width: 410px;
+    height: 140px;
+}
+.message {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#name {
+    
+}
+
+#email {
+    
+}
+
+.sendMessageButton {
+    width: 150px;
+    height: 18px;
+}
+}
+
+@media screen and (min-width: 737px){
+.informacoes {
+    display: flex;
+    grid-area: b;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.lista{
+    height: 210px;
+}
+
+.boxGeral{
+    display: grid;
+    grid-template-areas: "a b";
+}
+
+.message {
+    margin-right: 0px;
+    width: 434px;;
+}
+#message {
+    margin-right: 0px;
+}
+
+.boxTotal {
+    grid-area: a;
+}
+
+.li1 {
+    margin-top: 0px;
+}
+
+} 

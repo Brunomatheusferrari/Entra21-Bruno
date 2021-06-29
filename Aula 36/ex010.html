@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <input type="button" id="esconder" value="Click para esconder/mostrar o texto" />            
+        <div id="text">Texto</div>
+        <script>
+
+            let magico = document.querySelector("#esconder")
+
+       
+
+            let texto = document.querySelector("#text")
+            
+            let handlerButton = {
+            handleEvent(event) {
+                switch (event.type) {
+                    case 'click':
+                        event.target.textContent = texto.style.display = "none"
+                        break
+                    case 'click':
+                        event.target.textContent = texto.style.display = "block"
+                        break
+                }
+            }
+        }
+
+       
+    
+        
+        magico.addEventListener("click", handlerButton)
+        magico.addEventListener("click", handlerButton)
+
+        </script>
+    </body>
+
+</html>

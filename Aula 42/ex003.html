@@ -13,9 +13,28 @@ mes -> de 0 a 11
 
 Exemplo: obtemUltimoDiaMes(2012, 1) = 29 -->
 <body>
-    <script>
-       let dataString = new Date(2089, 01, 31)
-       console.log(dataString)
-    </script>
+    <!-- 3) Crie uma função obtemUltimoDiaMes(ano, mes) que retorna o último dia do mês.
+ 
+    Parâmetros: 
+    ano -> 2012
+    mes -> de 0 a 11
+ 
+    Exemplo: obtemUltimoDiaMes(2012, 1) = 29 -->
 </body>
+<script>
+    let data = new Date(2012,11,1),
+        ano = data.getFullYear(),
+        mes = data.getMonth()
+ 
+   function obtemUltimoDiaMes(ano, mes){
+       
+        let data2 = new Date(ano, mes + 1, 0),
+            dia = data2.getDate()                    
+    
+            data2 = new Date(ano,mes,dia)
+            console.log(data2)
+    }
+ 
+    obtemUltimoDiaMes(ano,mes)
+ </script>
 </html>

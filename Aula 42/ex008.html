@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 2) Utilizando setInterval faça um relógio que obtenha o horário atual
+    e faça ele aparecer na tela no formato: 
+    hh:mm:ss -->
+        <style>
+            body {
+                background-image: url("bg.gif");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }   
+
+            #relogio {
+                text-align: center;
+                font-family: 'Bebas Neue', cursive;
+                color: white;
+                font-size: 170px;
+                position: relative;
+                margin-top: 340px;
+                filter: drop-shadow(5px 0px 0px #242424);
+            }
+        </style>
+    <p id="relogio"></p>
+
+    <script>
+        let relogio = document.querySelector("#relogio")
+
+        function mostradorRelogio () {
+            let hora = new Date().getHours() 
+            let minuto = new Date().getMinutes()
+            let segundo = new Date().getSeconds()
+            if (hora < 10) {
+                hora = "0" + hora
+            }if(minuto < 10) {
+                minuto = "0" + minuto
+            }if(segundo < 10){
+                segundo = "0" + segundo
+            }
+            relogio.innerHTML = (`${hora}:${minuto}:${segundo}`)
+        }
+
+                 
+            let idInterval = setInterval(mostradorRelogio, 1000)
+    </script>
+
+</body>
+</html>

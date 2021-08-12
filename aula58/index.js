@@ -1,12 +1,14 @@
+require('dotenv').config();
 const { Pool } = require("pg");
+const db = require("./db");
 const format = require("pg-format");
 
-const pool = new Pool({
-host: "localhost",
-user: "postgres",
-password: "123456",
-database: "node"
-});
+// const pool = new Pool({
+// host: "localhost",
+// user: "postgres",
+// password: "123456",
+// database: "node"
+// });
 
 (async () => {
 // try {
@@ -59,13 +61,13 @@ database: "node"
  try {
 
 
- const { rows } = await pool.query("SELECT * FROM funcionarios WHERE nome ILIKE $1", ['m%']);
+ const { rows } = await db.query("SELECT * FROM funcionarios WHERE nome ILIKE $1", ['m%']);
 
  console.log(rows);
 } catch (error) {
 console.log(error.message);
 } finally {
-pool.end();
+db.end();
 }
 
 })();

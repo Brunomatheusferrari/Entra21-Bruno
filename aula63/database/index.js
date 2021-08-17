@@ -2,21 +2,21 @@ require("dotenv").config();
 const { Sequelize } = require("sequelize");
 const dbConfig = require("../config/database");
 
-const Usuario = require("../models/Usuario");
-const Projeto = require("../models/Projeto");
-const Endereco = require("../models/Endereco");
+const Usuario = require("../models/Livro");
+const Projeto = require("../models/Editora");
+const Endereco = require("../models/Cliente");
 
 const sequelize = new Sequelize(dbConfig);
 
 // Inicializando os models
-Usuario.init(sequelize);
-Projeto.init(sequelize);
-Endereco.init(sequelize);
+Livro.init(sequelize);
+Editora.init(sequelize);
+Cliente.init(sequelize);
 
 // Definindo as associações para os models
-Usuario.associate(sequelize.models);
-Projeto.associate(sequelize.models);
-Endereco.associate(sequelize.models);
+Livro.associate(sequelize.models);
+Editora.associate(sequelize.models);
+Cliente.associate(sequelize.models);
 
 module.exports = sequelize;
 // Testando conexão
@@ -30,14 +30,3 @@ module.exports = sequelize;
 // sequelize.close();
 // }
 // })();
-
-
-
-
-
-
-
-
-
-
-

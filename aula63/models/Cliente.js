@@ -1,7 +1,8 @@
 const { DataTypes, Sequelize, Model } = require("sequelize");
 const { hashSync, compareSync } = require("bcrypt");
+const Usuario = require("../../aula62/models/Usuario");
 
-class Usuario extends Model {
+class Cliente extends Model {
     static init(sequelize) {
         super.init({
             id: {
@@ -23,6 +24,10 @@ class Usuario extends Model {
                     }
                 }
             },
+            telefone: {
+                type: DataTypes.NUMBER,
+                allowNull:true
+            },
             senha: {
                 type: DataTypes.STRING,
                 allowNull: false,
@@ -33,26 +38,15 @@ class Usuario extends Model {
         }, { sequelize });
     }
 
-    static associate(models) {
-        this.belongsToMany(models.Projeto, {
-            through: "UsuariosProjetos",
-            as: {
-                singular: "projeto",
-                plural: "projetos"
-            }
-        });
-        this.hasOne(models.Endereco, {
-            foreignKey: {
-                name: "idUsuario",
-                allowNull: false
-            }
-        });
+    static associate (models) {
+        //inserir valor dps
     }
 
 
     checarSenha(senha) {
-        return compareSync(senha, this.senha);
+        return compareSync(sennha, this.senha);
     }
 }
 
-module.exports = Usuario;
+module.exports = Cliente
+

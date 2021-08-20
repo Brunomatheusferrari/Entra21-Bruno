@@ -1,39 +1,51 @@
 const { Usuario } = require("../db/models")
+const createError = require("http-errors");
+const usuariosServices = require("./usuariosServices");
+const { noExtendLeft } = require("sequelize/types/lib/operators");
 
-async function getUsuarios(id) {
+async function getUsuarios() {
+    const usuarios = await Usuario.findAll();
+
+    return usuarios;
+};
+
+async function getUsuario(id) {
     const usuario = await Usuario.findOne({
         where: {
-            id: req.params.id
+            id
         }
     });
 
     if (!usuario) {
-        return res.status(404).json({ message: "Usuário não foi encontrado!" });
-    }
+        throw new createError(404, "Usuário não encontrado");
+    };
 
-    res.json(usuario);
+    return usuario;
 };
 
-async function getUsuario(id){
+async function createUsuario(novoUsuario) {
+    const [usuario, criadoAgora] = await Usuario.findOrCreate({
+    where: { email: novoUsuario.email },
+    defaults: novoUsuario
+    });
+    
+     if (!criadoAgora) throw new createError(409, "Usuário já está cadastrado!");
+    
+     return usuario;
+    }
 
-}
+// async function removeUsuario(id){
 
-async function createUsuario(usuario){
+// };
 
-}
+// async function updateUsuario(usuarioAtualizado){
 
-async function updateUsuario(usuarioAtualizado){
-
-}
-
-async function removerUsuario(id){
-
-}
+// };
 
 module.exports = {
-    getUsuarios,
     getUsuario,
-    createUsuario,
-    updateUsuario,
-    removerUsuario
+    getUsuarios,
+    // createUsuario,
+    // removeUsuario,
+    // updateUsuario    
 }

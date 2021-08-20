@@ -1,57 +1,57 @@
-const usuariosServices = require("../services/usuariosServices");
+const usuariosServices = require("../services/usuariosServices")
 
-async function getAll(req, res, next) {
+async function getAll(req, res, next){
     try {
         const usuarios = await usuariosServices.getUsuarios();
 
-        res.json(usuarios);
-    } catch (err) {
-        console.log(err);
-        next(err);
+        res.json(usuarios)
+    } catch (error) {
+        console.log(error)
+        next(error)
     }
 }
 
-async function getOne() {
+async function getOne(req, res, next){
     try {
-        const usuarios = await usuariosServices.getUsuarios();
+        const usuarios = await usuariosServices.getUsuario(req.params.id);
 
-        res.json(usuarios);
-    } catch (err) {
-        console.log(err);
-        next(err);
+        res.json(usuarios)
+    } catch (error) {
+        console.log(error)
+        next(error)
     }
 }
 
-async function create() {
+async function create(req, res, next){
     try {
-        const usuarios = await usuariosServices.getUsuarios();
+        const usuarios = await usuariosServices.createUsuario(req.body);
 
-        res.json(usuarios);
-    } catch (err) {
-        console.log(err);
-        next(err);
+        res.json(usuarios)
+    } catch (error) {
+        console.log(error)
+        next(error)
     }
 }
 
-async function update() {
+async function update(req, res, next){
     try {
-        const usuarios = await usuariosServices.getUsuarios();
+        const usuarios = await usuariosServices.updateUsuario(req.params.id, req.body);
 
-        res.json(usuarios);
-    } catch (err) {
-        console.log(err);
-        next(err);
-    }
+        res.json(usuarios)
+    } catch (error) {
+        console.log(error)
+        next(error)
+    }  
 }
 
-async function remove() {
+async function remove(req, res, next){
     try {
-        const usuarios = await usuariosServices.getUsuarios();
+         await usuariosServices.removeUsuario(req.params.id);
 
-        res.json(usuarios);
-    } catch (err) {
-        console.log(err);
-        next(err);
+        res.status(204).end();
+    } catch (error) {
+        console.log(error)
+        next(error)
     }
 }
 

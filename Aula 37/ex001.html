@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,4 +36,43 @@
     </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Primeiro Item</li>
+        <li>Segundo Item</li>
+        <li>Terceiro Item</li>
+        <li>Quarto Item</li>
+        <li>Quinto Item</li>
+    </ul>
+
+    <script>
+
+       let lista = document.querySelectorAll("ul > li")
+     
+   
+
+    for (let li of lista ) {
+        li.addEventListener('click', (event) => {
+            if(li.style.backgroundColor == "white"){
+                li.style.backgroundColor = "yellow"
+            }else if ( li.style.backgroundColor = "yellow"){
+                li.style.backgroundColor == "white"
+            }
+        
+            })
+    }
+
+
+    </script>
+
+</body>
+>>>>>>> daed6c2573d8aa8b87b909ed01cb8e46cfedfd6d
 </html>

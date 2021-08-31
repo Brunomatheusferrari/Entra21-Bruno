@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,4 +78,85 @@ Onde:
             form.addEventListener("submit" , calculaJuros)
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- Exercício
+
+Crie um página da web que permita receber um valor inicial
+de depósito, a quantidade de meses que esse dinheiro ficará
+depositado e a porcentagem de juros ao ano.
+Mostre quanto o dinheiro rendeu nesse período.
+
+Fórmula:
+resultado = Math.round(inicial * (1 + juros * anos))
+
+Onde:
+    inicial - valor inicial.
+    juros - porcentagem de juros. Ex.: 10%.
+    anos - tempo que o valor ficará depositado. -->
+
+    <body>
+        <!-- Exercício
+     
+        Crie um página da web que permita receber um valor inicial
+        de depósito, a quantidade de meses que esse dinheiro ficará
+        depositado e a porcentagem de juros ao ano.
+        Mostre quanto o dinheiro rendeu nesse período.
+     
+        Fórmula:
+        resultado = Math.round(inicial * (1 + juros * anos))
+        
+        Onde:
+            inicial - valor inicial.
+            juros - porcentagem de juros. Ex.: 10%.
+            anos - tempo que o valor ficará depositado.
+        
+        */ -->
+     
+        <form>
+            Valor Inicial
+            <label for="inicial">
+                <input type="text" name="inicial" id="inicial" value="10000">
+            </label>
+            <br>
+            Juros
+            <label for="juros">
+                <input type="text" name="juros" id="juros" value="10%">
+            </label>
+            <br>
+            Anos
+            <label for="anos">
+                <input type="text" name="anos" id="anos" value="5">
+            </label>
+            <br>
+            <input type="submit">
+        </form>
+     
+        <script>
+            let form = document.querySelector("form")
+     
+            let inicial = form.inicial,
+                juros = form.juros,
+                anos = form.anos  
+     
+            function calculaJuros() {
+                let valorInicial = parseInt(inicial.value),
+                    juros2 = parseInt(juros.value),
+                    anos2 = parseInt(anos.value),
+                    resultado = Math.round(valorInicial * (1 + (juros2 / 100) * anos2))
+     
+                alert(`No Periodo de ${anos2} anos\nO valor inicial de ${valorInicial}\n\nRendeu: ${resultado}`)
+            }
+                    
+            form.addEventListener("submit" , calculaJuros)
+        </script>
+    </body>
+>>>>>>> daed6c2573d8aa8b87b909ed01cb8e46cfedfd6d
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,4 +73,80 @@ no formato:
     
 </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 2) Crie uma função obtemDiaSemana(data) para mostrar o dia da semana
+no formato: 
+ "Segunda-Feira", 
+ "Terça-Feira", 
+ "Quarta-Feira", 
+ "Quinta-Feira",
+ "Sexta-Feira",
+ "Sábado",
+ "Domingo" -->
+<body>
+    
+<script>
+    
+    let dia = new Date().getDay()
+    let body = document.querySelector("body")
+
+    function seletorDia (dia){
+    switch (dia) {
+        case 0 :
+            console.log ("Domingo")
+            let diaSemana0 = "Domingo"
+            body.innerHTML = diaSemana0
+            break;
+        
+        case 1 : 
+            console.log("Segunda-Feira")
+            let diaSemana1 = "Segunda-Feira"
+            body.innerHTML = diaSemana1
+            break;
+        
+        case 2 : 
+            console.log("Terça-Feira")
+            let diaSemana2 = "Terça-Feira"
+            body.innerHTML = diaSemana2
+            break;
+        
+        case 3 : 
+            console.log("Quarta-Feira")
+            let diaSemana3 = "Quarta-Feira"
+            body.innerHTML = diaSemana3
+            break;
+        
+        case 4 : 
+            console.log("Quinta-Feira")
+            let diaSemana4 = "Quinta-Feira"
+            body.innerHTML = diaSemana4
+            break;
+        
+        case 5 : 
+            console.log("Sexta-Feira")
+            let diaSemana5 = "Sexta-Feira"
+            body.innerHTML = diaSemana5
+            break;
+        
+        case 6 : 
+            console.log("Sábado")
+            let diaSemana6 = "Sábado"
+            body.innerHTML = diaSemana6
+            break;
+        }
+    }
+    
+   
+    seletorDia(dia)
+    
+</script>
+</body>
+>>>>>>> daed6c2573d8aa8b87b909ed01cb8e46cfedfd6d
 </html>

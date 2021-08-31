@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        8) Faça uma função que recebe a idade de uma pessoa em anos, meses e dias e retorna essa idade expressa em dias.
+        */
+
+        
+        let idadeCompleta = []
+        let anos = +prompt("Quantos anos de idade você tem?")
+        let meses = +prompt("Quantos meses de idade você tem?")
+        let dias = +prompt("Quantos dias de idade você tem?")
+
+        function conversor(anos, meses, dias){
+            return anos * 365
+            return meses * 30
+            return dias    
+            return anos + meses + dias
+
+        }
+
+        console.log(`Você tem aproximadamente ${conversor(anos, meses, dias)} de vida.`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+            2) Leia o salario de um trabalhador e o valor da prestação de um empréstimo. Se a prestaçao
+            for maior que 20% do salário imprima: “empréstimo não concedido”, caso contrario imprima:
+            “empréstimo concedido”.
+        */
+
+        let salario = +prompt("Digite seu salário:")
+        let emprestimo = +prompt("Digite o valor do empréstimo.")
+
+        if(salario*.2 < emprestimo){
+            console.log("Emprestimo não concedido")
+        }else{
+            console.log("Emprestimo concedido.")
+        }
+
+    </script>
+</body>
+</html>

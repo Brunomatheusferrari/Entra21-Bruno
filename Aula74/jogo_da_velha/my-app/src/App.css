@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+.title {
+  color: rgb(0, 204, 255);
+  font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Exercício 1
+       
+        let vetor = [],
+            pares = 0
+        for (let i = 0; i < 10; i++) {
+            vetor[i] = +prompt("Digite um número")
+            if (vetor[i] %2 ==0 ) pares++
+            
+        }
+        console.log(`A quantidade de pares é ${pares}`)
+
+        //Exercício 2
+
+        let vetor = [];
+        let maiorNumero = 0
+       
+        for(let i = 0; i < 10 ; i++){                                 //Incompleto
+            vetor[i] = +prompt("Digite um número")
+
+            if (i === 0) {
+                maiorNumero = vetor[i]
+            } else if (vetor[i] > maiorNumero) {
+                maiorNumero = vetor[i]
+            }           
+        } 
+        console.log = (`O maior número é ${maiorNumero}`)
+        
+
+        //Exercício 3
+
+       let vetor = []
+       let maiorNumero = 0
+       let menorNumero = 1
+
+       for(let i = 0; i < 10; i++ ){
+           vetor[i] = +prompt("Digite um número:")
+       
+            if (vetor[i] > maiorNumero){
+                maiorNumero = vetor[i]
+            }else if(vetor[i] < menorNumero){
+                menorNumero = vetor[i]
+            }
+        
+        }
+
+        console.log(`O maior número é ${maiorNumero}`)
+        console.log(`O menor número é ${menorNumero}`)
+      
+            
+     
+       //Exercício 4
+
+            let vetor = []
+            let vetorinverso = []
+            let contador = 4
+                                                             
+            for(let i = 0; i<5; i++){
+                vetor[i] = +prompt("Digite um número:")
+                vetorinverso[contador] = vetor[i] 
+                contador--
+            
+            }
+
+            console.log (vetor)
+            console.log (vetorinverso)                                                                                
+
+ 
+
+        //Exercício 5
+
+            vetor = []
+           for(let i = 0; i < 5 ; i++){
+               vetor[i] = +prompt("Digite os nomes:")
+           }
+                                                                //incompleto
+           let nome = +prompt("Digite o nome da pessoa que você quer encontrar:")
+
+           if(vetor = nome){
+               console.log = ("Achei")
+
+           }
+
+        
+        //Exercício 6
+
+
+            let a = [1, 0, 5, -2, -5, 7]
+            let soma = a[0] + a[1] + a[5]
+            console.log = (soma)
+            a[4] = 100
+            console.log = (`${a[0]}\n${a[1]}\n${a[2]}\n${a[3]}\n${a[4]}\n${[5]}`)
+
+
+        //Exercício 7
+
+        let vetor = []
+        let quadrado = []
+        for(let i = 0; i < 5 ; i++){
+            vetor[i] = +prompt("Digite um número:")
+           quadrado[i] = vetor[i] **2
+        }
+        
+        console.log  (vetor)
+        console.log  (quadrado)
+    
+
+        //Exercício 8
+
+
+        let vetor = []
+        let contador = 0
+        let numero = 0
+        for( let i = 0; i < 6; i++){
+        let numero = +prompt ("Digite um número par")
+
+        if(numero % 2 == 0){
+            vetor[contador] = numero
+            contador++                                              
+         }
+        }
+
+        let j = vetor.length - 1
+        while (j >= 0 ){
+            console.log (vetor[j])
+            j--
+
+        }
+
+        
+
+        //Exercício 9
+
+                                                                     //incompleto
+
+
+        //Exercício 10
+
+
+        let vetor = []
+        let soma = 0
+        let numerodenegativos = 0
+        for(let i = 0; i < 10; i++){
+          vetor[i] = +prompt("Digite um número:")                   
+             
+          if (vetor[i] > 0){
+                soma += vetor[i]
+       
+             } else {
+                numerodenegativos++
+             }
+
+        }
+
+        console.log (`A soma dos positivos é: ${soma}`)
+        console.log(`O número de negativos é: ${numerodenegativos}`)
+
+        
+        //Exercício 11
+
+        let vetor = []
+        let maior = 0
+        let menor = 0
+
+        for(let i = 0; i < 5; i++){
+            vetor[i] = +prompt("Digite um número:")
+        
+                if(vetor[i] > maior){
+                    maior == vetor[i]
+                } else if (vetor[i] < menor){
+                    menor == vetor[i]                           //Incompleto
+                }
+        
+            for(let j = 0; j < 5; j++){
+                
+                if(vetor[j] == maior){
+                    console.log (`O maior elemento é ${maior} e sua posição é ${j}`)
+                } else if (vetor[j] == menor){
+                    console.log (`O menor elemento é ${menor} e sua posição é ${j}`)
+                }
+
+                
+                }
+               
+            }
+              
+                
+        //Exercício 12
+                                                                                         
+        let vetor = []
+        let contador = [0, 0, 0, 0, 0, 0]
+        
+        for(let i = 0 ; i < 100; i++){
+            vetor[i] = Math.floor(Math.random() * (7 - 1) + 1)
+            
+        }
+        
+        for(let i = 0; i < 100; i++){
+            switch(vetor[i]){
+                case  1:
+                    contador[0]++
+                    break;
+
+                case  2:
+                    contador[1]++
+                    break;                                                                                                       
+
+                case  3:
+                    contador[2]++
+                    break;
+            
+                case  4:
+                    contador[3]++
+                    break;
+
+                case  5:
+                    contador[4]++
+                    break;
+
+                case  6:
+                    contador[5]++
+                    break;
+
+            }                                    
+        }
+
+        for (let i = 0; i < 6; i++) {
+            console.log(`A quantidade de vezes que o número ${i + 1} apareceu foi: ${contador[i]}`)
+        }
+    
+            
+         
+        //Exercício 13
+
+        let vetor = []
+        let contador = 0
+        let maiorNumero = 0
+        while (numero = true){
+          let  numero = +prompt("Digite um número:")
+          
+            if (numero < 0){
+                    break
+            }else if (numero > maiorNumero){                            //Incompleto
+                menorNumero = numero
+
+                }else(vetor[contador] = numero )   
+            contador++   
+    }      
+        
+    
+         
+       
+
+
+
+    </script>
+</body>
+</html>

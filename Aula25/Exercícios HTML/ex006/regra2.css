@@ -1,0 +1,27 @@
+.titulo {
+    text-align: center;
+}
+
+.titulo2 {
+    text-align: center;
+}
+
+.regra2 {
+    text-align: center;
+}
+
+.linkvoltar {
+    float: none;
+    position: absolute;
+    top: 23%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+  .linkprosseguir {
+    float: none;
+    position: absolute;
+    top: 23%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }

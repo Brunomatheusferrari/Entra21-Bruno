@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        9) Faça uma função que recebe, por parâmetro, um valor inteiro e positivo e retorna o número de divisores 
+        desse valor.
+        */
+
+        let valor = +prompt("Digite um valor"),
+            divisores = 0
+
+        function localizadorDivisores (valor){
+            for(let i = 0; i <= valor; i++){
+                if(valor % i == 0){
+                divisores++
+            }
+            }
+            return divisores
+        }
+        console.log(`O número de divisores é ${localizadorDivisores(valor)}`)
+    
+    </script>
+</body>
+</html>

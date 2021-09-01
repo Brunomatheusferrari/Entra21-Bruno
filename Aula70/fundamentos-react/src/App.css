@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.centerlize {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  }
+  
+.cards {
+display: flex;
+justify-content: space-evenly;
+flex-flow: row wrap;
+gap: 20px;
+}

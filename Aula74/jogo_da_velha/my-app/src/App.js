@@ -3,10 +3,11 @@ import { Board } from './components/Board';
 import { Game } from './components/Game';
 import { Square } from './components/Square';
 
+
 function App() {
   return (
     <div className="App">
-      <h1>Jogo da Idosa</h1>
+      <h1 className="title">JOGO DA VELHA</h1>
       {/* <Board />
       <Square /> */}
       <Game />

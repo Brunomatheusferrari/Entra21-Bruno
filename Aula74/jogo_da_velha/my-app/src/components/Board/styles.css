@@ -1,6 +1,7 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
+    font-size: 30px;
   }
   
   ol, ul {
@@ -12,7 +13,28 @@ body {
     content: "";
     display: table;
   }
+
+  .board-row{
+    /* border-left: black 6px solid;
+    border-right: black 6px solid; */
+    width: 447px;
+  }
+
+  .boardBorder {
+    width: 358px;
+    border: 3px solid rgb(255, 255, 255);
+  }
   
   .status {
     margin-bottom: 10px;
   }
+
+  .square {
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(4, 0, 26);
+    color: white;
+  }
+

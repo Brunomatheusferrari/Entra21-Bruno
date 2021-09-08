@@ -1,0 +1,15 @@
+
+
+CONFIGURAR O GIT:
+
+git config --global --list 
+it config --global user.name "Bruno Matheus Ferrari"                                                                            
+PS C:\Users\bruno.ferrari\Desktop\trabalhando-git> git config --global user.email "brunomatheussferrari@gmail.com"
+
+git init
+git status
+git branch -M main
+git push -u origin main
+
+git branch -d bug/1 // deletar branch
+git checkout bug/1 // muda para branch
